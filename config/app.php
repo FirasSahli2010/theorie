@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Rieshcool Wallat :: Theorie'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,8 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    /*'url' => env('APP_URL', 'http://localhost'), */
+    'url' => env('APP_URL', 'http://theorie.test/'),
 
     'asset_url' => env('ASSET_URL', null),
 
@@ -80,7 +81,22 @@ return [
     |
     */
 
-    'locale' => 'en',
+    // 'locale' => 'en',
+        'locale' => 'nl',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Available locales
+    |--------------------------------------------------------------------------
+    |
+    | List all locales that your application works with
+    |
+    */
+    'available_locales' => [
+      'English' => 'en',
+      'عربي' => 'ar',
+      'Nederlands' => 'nl',
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +109,10 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    // 'fallback_locale' => 'en',
+    'fallback_locale' => 'nl',
+
+    'languages' => ['ar','en', 'nl'],
 
     /*
     |--------------------------------------------------------------------------
@@ -106,7 +125,8 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    // 'faker_locale' => 'en_US',
+    'faker_locale' => 'nl_NL',
 
     /*
     |--------------------------------------------------------------------------

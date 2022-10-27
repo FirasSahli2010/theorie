@@ -1,10 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.admin.app')
 
 @section('content')
-<div class="container">
+<div id="content-wrapper" class="d-flex flex-column">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="col-lg-12 col-md-12 card" style="width:100%;">
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
